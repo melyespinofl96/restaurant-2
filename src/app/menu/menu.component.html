@@ -1,9 +1,12 @@
 <!--Menu Itenms-->
 <section class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-8" id="menu-section">
     <div class="container mx-auto">
-      <h2 class="text-6xl mb-8">Menu</h2>
-
+      <div *ngIf="menu !=true" class="bg-white shadow-lg p-4" (click)="menuToggle()">
+        <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
+      </div>
+      
       <!--Food Categories-->
+      <h2  *ngIf="menu" class="text-6xl mb-8">Menu</h2>
       <div *ngIf="menu" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white shadow-lg p-4" (click)="appetizersToggle()">
             <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
@@ -55,8 +58,9 @@
             <p class="text-gray-600">Mexican Beer</p>
           </div>
       </div>
-
+      
       <!--Appetizers-->
+      <h2  *ngIf="appetizers" class="text-6xl mb-8">Appetizers</h2>
       <div *ngIf="appetizers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4" >
           <img src="assets\Food\guacamoleAndChips.jpg" alt="Guacamole and Chips" class="w-full h-auto mb-4">
@@ -93,6 +97,7 @@
       </div>
 
       <!--Soups and Salads-->
+      <h2  *ngIf="soupsAndSalads" class="text-6xl mb-8">Soups and Salads</h2>
       <div *ngIf="soupsAndSalads" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\tortillaSoup.jpg" alt="Tortilla Soup" class="w-full h-auto mb-4">
@@ -122,6 +127,7 @@
       </div>
 
       <!--Tacos-->
+      <h2  *ngIf="tacos" class="text-6xl mb-8">Tacos</h2>
       <div *ngIf="tacos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\carneAsadaTacos.jpg" alt="Carne Asada Tacos" class="w-full h-auto mb-4">
@@ -158,6 +164,7 @@
       </div>
 
       <!--Enchiladas-->
+      <h2  *ngIf="enchiladas" class="text-6xl mb-8">Enchiladas</h2>
       <div *ngIf="enchiladas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\chickenEnchiladas.jpg" alt="Chicken Enchiladas" class="w-full h-auto mb-4">
@@ -187,6 +194,7 @@
       </div>
 
       <!--Desserts-->
+      <h2  *ngIf="desserts" class="text-6xl mb-8">Desserts</h2>
       <div *ngIf="desserts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\flan.jpg" alt="Flan" class="w-full h-auto mb-4">
@@ -216,6 +224,7 @@
       </div>
 
       <!--Beverages-->
+      <h2  *ngIf="beverages" class="text-6xl mb-8">Beverages</h2>
       <div *ngIf="beverages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\margarita.jpg" alt="Appetizers" class="w-full h-auto mb-4">
