@@ -1,0 +1,14 @@
+<nav class="bg-red-700 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+      <img class="h-16 w-auto" src="assets\logo.png" alt="Logo">
+      <ul class="flex space-x-10 mx-32">
+          <button class="hover:text-gray-300 nav-link text-2xl font-bold"
+                  routerLink="/home" routerLinkActive="active"> Home</button>
+          <button class="hover:text-gray-300 nav-link text-2xl font-bold"
+                  routerLink="/menu" routerLinkActive="active"> Menu</button>
+          <button class="hover:text-gray-300 nav-link text-2xl font-bold"
+                  routerLink="/contact" routerLinkActive="active"> Contact</button>
+      </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

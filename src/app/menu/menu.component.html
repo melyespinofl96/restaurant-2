@@ -1,0 +1,183 @@
+<!--Menu Itenms-->
+<section class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-8" id="menu-section">
+    <div class="container mx-auto">
+      <h2 class="text-6xl mb-8">Menu</h2>
+
+      <!--Food Categories-->
+      <div *ngIf="menu" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg p-4" (click)="appetizersToggle()">
+            <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Appetizers</h3>
+            <p class="text-gray-600">Guacamole and Chips</p>
+            <p class="text-gray-600">Queso Fundido</p>
+            <p class="text-gray-600">Ceviche</p>
+            <p class="text-gray-600">Taquitos</p>
+          </div>
+
+          <div class="bg-white shadow-lg p-4" (click)="soupsAndSaladsToggle()">
+            <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Soups and Salads</h3>
+            <p class="text-gray-600">Tortilla Soup</p>
+            <p class="text-gray-600">Ensalada Mexicana</p>
+            <p class="text-gray-600">Pozole</p>
+          </div>
+
+          <div class="bg-white shadow-lg p-4" (click)="tacosToggle()">
+            <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Tacos</h3>
+            <p class="text-gray-600">Carne Asada Tacos</p>
+            <p class="text-gray-600">Al Pastor Tacos</p>
+            <p class="text-gray-600">Baja Fish Tacos</p>
+            <p class="text-gray-600">Vegetarian Tacos</p>
+          </div>
+
+          <div class="bg-white shadow-lg p-4" (click)="enchiladasToggle()">
+            <img src="assets\Food\enchiladas.jpg" alt="Enchiladas" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Enchiladas</h3>
+            <p class="text-gray-600">Chicken Enchiladas</p>
+            <p class="text-gray-600">Cheese and Spinach Enchiladas</p>
+            <p class="text-gray-600">Enchiladas Suizas</p>
+          </div>
+
+          <div class="bg-white shadow-lg p-4" (click)="dessertsToggle()">
+            <img src="assets\Food\cake.jpg" alt="Desserts" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Desserts</h3>
+            <p class="text-gray-600">Flan</p>
+            <p class="text-gray-600">Churros</p>
+            <p class="text-gray-600">Tres Leches Cake</p>
+          </div>
+
+          <div class="bg-white shadow-lg p-4" (click)="beveragesToggle()">
+            <img src="assets\Food\margaritas.jpg" alt="Beverages" class="w-full h-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Beverages</h3>
+            <p class="text-gray-600">Margaritas</p>
+            <p class="text-gray-600">Agua Frescas</p>
+            <p class="text-gray-600">Mexican Beer</p>
+          </div>
+      </div>
+
+      <!--Appetizers-->
+      <div *ngIf="appetizers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4" >
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Guacamole and Chips" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Guacamole and Chips</h3>
+          <p class="text-gray-600">Delight in creamy guacamole paired with crispy tortilla chips for a satisfying appetizer</p>
+          <span class="text-red-500 font-bold">$6.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\quesoFundido.jpg" alt="Queso Fundido" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Queso Fundido</h3>
+          <p class="text-gray-600">Delight in creamy guacamole paired with crispy tortilla chips for a satisfying appetizer</p>
+          <span class="text-red-500 font-bold">$6.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Ceviche</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\enchiladas.jpg" alt="Enchiladas" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Taquitos</h3>
+        </div>
+      </div>
+
+      <!--Soups and Salads-->
+      <div *ngIf="soupsAndSalads" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Tortilla Soup</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Ensalada Mexicana</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Pozole</h3>
+        </div>
+      </div>
+
+      <!--Tacos-->
+      <div *ngIf="tacos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Carne Asada Tacos</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Al Pastor Tacos</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Baja Fish Tacos</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Vegetarian Tacos</h3>
+        </div>
+      </div>
+
+      <!--Enchiladas-->
+      <div *ngIf="enchiladas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Chicken Enchiladas</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Cheese and Spinach Enchiladas</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Enchiladas Suizas</h3>
+        </div>
+      </div>
+
+      <!--Desserts-->
+      <div *ngIf="desserts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Flan</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Churros</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Tres Leches Cake</h3>
+        </div>
+      </div>
+
+      <!--Beverages-->
+      <div *ngIf="beverages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Margaritas</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Agua Frescas</h3>
+        </div>
+
+        <div class="bg-white shadow-lg p-4">
+          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Mexican Beer</h3>
+        </div>
+      </div>
+
+    </div>
+</section>
+<app-footer></app-footer>
