@@ -18,7 +18,7 @@
             <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">Soups and Salads</h3>
             <p class="text-gray-600">Tortilla Soup</p>
-            <p class="text-gray-600">Ensalada Mexicana</p>
+            <p class="text-gray-600">Chicken Mexican Salad</p>
             <p class="text-gray-600">Pozole</p>
           </div>
 
@@ -62,7 +62,7 @@
           <img src="assets\Food\guacamoleAndChips.jpg" alt="Guacamole and Chips" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Guacamole and Chips</h3>
           <p class="text-gray-600">Delight in creamy guacamole paired with crispy tortilla chips for a satisfying appetizer</p>
-          <span class="text-red-500 font-bold">$3.99</span>
+          <span class="text-red-500 font-bold">$2.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
@@ -82,101 +82,165 @@
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\taquitos.jpg" alt="Taquitos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Taquitos</h3>
+          <p class="text-gray-600">Savory shredded chicken wrapped in crispy tortillas</p>
+          <span class="text-red-500 font-bold">$4.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
       <!--Soups and Salads-->
       <div *ngIf="soupsAndSalads" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <img src="assets\Food\tortillaSoup.jpg" alt="Tortilla Soup" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Tortilla Soup</h3>
+          <p class="text-gray-600">Savory shredded chicken wrapped in crispy tortillas</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Ensalada Mexicana</h3>
+          <img src="assets\Food\chickenMexicanSalad.jpg" alt="Chicken Mexican Salad" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Chicken Mexican Salad</h3>
+          <p class="text-gray-600">Grilled chicken, crisp lettuce, vibrant veggies, zesty dressing</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <img src="assets\Food\pozole.jpg" alt="Pozole" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Pozole</h3>
+          <p class="text-gray-600">Savor the flavors of Pozole: a hearty Mexican soup with tender pork, hominy, and aromatic spices</p>
+          <span class="text-red-500 font-bold">$5.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
       <!--Tacos-->
       <div *ngIf="tacos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <img src="assets\Food\carneAsadaTacos.jpg" alt="Carne Asada Tacos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Carne Asada Tacos</h3>
+          <p class="text-gray-600">Grilled steak in warm tortillas with fresh toppings</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <img src="assets\Food\alPastorTacos.jpg" alt="Al Pastor Tacos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Al Pastor Tacos</h3>
+          <p class="text-gray-600">Marinated pork, warm tortillas, vibrant toppings</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <img src="assets\Food\bajaFishTacos.jpg" alt="Baja Fish Tacos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Baja Fish Tacos</h3>
+          <p class="text-gray-600">Crispy fish fillets, nestled in warm tortillas, topped with fresh ingredients</p>
+          <span class="text-red-500 font-bold">$5.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <img src="assets\Food\vegetarianTacos.jpg" alt="Vegetarian Tacos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Vegetarian Tacos</h3>
+          <p class="text-gray-600">Fresh veggies, savory beans, zesty toppings in warm tortillas</p>
+          <span class="text-red-500 font-bold">$3.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
       <!--Enchiladas-->
       <div *ngIf="enchiladas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <img src="assets\Food\chickenEnchiladas.jpg" alt="Chicken Enchiladas" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Chicken Enchiladas</h3>
+          <p class="text-gray-600">Tender chicken wrapped in tortillas, smothered with flavorful sauce and melted cheese</p>
+          <span class="text-red-500 font-bold">$8.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <img src="assets\Food\cheeseAndSpinachEnchiladas.jpg" alt="Cheese and Spinach Enchiladas" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Cheese and Spinach Enchiladas</h3>
+          <p class="text-gray-600">Creamy cheese, flavorful spinach, tortillas, savory sauce</p>
+          <span class="text-red-500 font-bold">$6.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <img src="assets\Food\enchiladasSuizas.jpg" alt="Enchiladas Suizas" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Enchiladas Suizas</h3>
+          <p class="text-gray-600">Rolled tortillas filled with savory chicken, smothered in creamy Swiss cheese sauce</p>
+          <span class="text-red-500 font-bold">$7.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
       <!--Desserts-->
       <div *ngIf="desserts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <img src="assets\Food\flan.jpg" alt="Flan" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Flan</h3>
+          <p class="text-gray-600">Creamy caramel-infused custard dessert</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <img src="assets\Food\churros.jpg" alt="Churros" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Churros</h3>
+          <p class="text-gray-600">Crispy fried dough pastry, dusted with cinnamon sugar</p>
+          <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <img src="assets\Food\tresLechesCake.jpg" alt="Tres Leches Cake" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Tres Leches Cake</h3>
+          <p class="text-gray-600">\Ultra light cake soaked in a sweet milk mixture</p>
+          <span class="text-red-500 font-bold">$5.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
       <!--Beverages-->
       <div *ngIf="beverages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
+          <img src="assets\Food\margarita.jpg" alt="Appetizers" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Margaritas</h3>
+          <p class="text-gray-600">A refreshing blend of tequila, lime juice, and a touch of sweetness, served with a salted rim for a perfect balance of flavors</p>
+          <span class="text-red-500 font-bold">$5.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
+          <img src="assets\Food\aguaFresca.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Agua Frescas</h3>
+          <p class="text-gray-600">Refreshing and fruity beverages made with fresh ingredients like watermelon, cucumber, or hibiscus, offering a cool and revitalizing sip</p>
+          <span class="text-red-500 font-bold">$2.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
-          <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
+          <img src="assets\Food\mexicanBeer.jpg" alt="Tacos" class="w-full h-auto mb-4">
           <h3 class="text-xl font-bold mb-2">Mexican Beer</h3>
+          <p class="text-gray-600">Crisp and flavorful brews with a touch of zest and a hint of tradition</p>
+          <span class="text-red-500 font-bold">$3.99</span>
+        </div>
+
+        <div class="bg-white shadow-lg p-4" (click)="menuToggle()">
+          <img src="assets\back.jpg" alt="Back" class="w-full h-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Back To Menu</h3>
         </div>
       </div>
 
