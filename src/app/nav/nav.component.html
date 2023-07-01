@@ -32,15 +32,18 @@
 <ul *ngIf="mobileMenu" class="sm:hidden absolute bg-red-700 py-2 w-full right-0 rounded-md shadow-lg text-white" id="dropdown-menu">
   <li class="text-center">
     <a class="hover:bg-red-500 block px-4 py-2 "
-      routerLink="/home" routerLinkActive="active">Home</a>
+      routerLink="/home" routerLinkActive="active"
+      (click)="mobileMenuToggle()">Home</a>
   </li>
   <li class="text-center">
     <a class="hover:bg-red-500 block px-4 py-2"
-      routerLink="/menu" routerLinkActive="active">Menu</a>
+      routerLink="/menu" routerLinkActive="active"
+      (click)="mobileMenuToggle()">Menu</a>
   </li>
   <li class="text-center">
     <a class="hover:bg-red-500 block px-4 py-2"
-      routerLink="/contact" routerLinkActive="active">Contact</a>
+      routerLink="/contact" routerLinkActive="active"
+      (click)="mobileMenuToggle()">Contact</a>
   </li>
 </ul>
 

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavComponent implements OnInit{
 
-  mobileMenu = false
+  mobileMenu:boolean = false
 
   ngOnInit(): void {
     this.mobileMenu = false
