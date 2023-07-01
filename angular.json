@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "https://github.com/melyespinofl96/restaurant-2/",
             "outputPath": "dist/restaurant-2",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,12 +30,6 @@
             "scripts": []
           },
           "configurations": {
-            "github-pages":{
-              "baseHref": "https://github.com/melyespinofl96/restaurant-2/"
-            },
-            "firebase":{
-              "baseHref": "https://restaurant-website-8ed14.web.app/"
-            },
             "production": {
               "budgets": [
                 {
