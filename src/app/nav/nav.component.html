@@ -13,13 +13,16 @@
     <!-- Desktop Navigation Links -->
     <ul class="hidden sm:flex space-x-4 relative" id="nav-links">
       <li>
-        <a class="hover:text-gray-300 text-lg font-bold" href="/home">Home</a>
+        <a class="hover:text-gray-300 text-lg font-bold" 
+          routerLink="/home" routerLinkActive="active">Home</a>
       </li>
       <li>
-        <a class="hover:text-gray-300 text-lg font-bold" href="/menu">Menu</a>
+        <a class="hover:text-gray-300 text-lg font-bold"
+          routerLink="/menu" routerLinkActive="active">Menu</a>
       </li>
       <li>
-        <a class="hover:text-gray-300 text-lg font-bold" href="/contact">Contact</a>
+        <a class="hover:text-gray-300 text-lg font-bold"
+          routerLink="/contact" routerLinkActive="active">Contact</a>
       </li>
     </ul>
   </div>
@@ -28,13 +31,16 @@
 <!-- Dropdown Menu -->
 <ul *ngIf="mobileMenu" class="sm:hidden absolute bg-red-700 py-2 w-full right-0 rounded-md shadow-lg text-white" id="dropdown-menu">
   <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2 " href="/home">Home</a>
+    <a class="hover:bg-red-500 block px-4 py-2 "
+      routerLink="/home" routerLinkActive="active">Home</a>
   </li>
   <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2" href="/menu">Menu</a>
+    <a class="hover:bg-red-500 block px-4 py-2"
+      routerLink="/menu" routerLinkActive="active">Menu</a>
   </li>
   <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2" href="/contact">Contact</a>
+    <a class="hover:bg-red-500 block px-4 py-2"
+      routerLink="/contact" routerLinkActive="active">Contact</a>
   </li>
 </ul>
 
