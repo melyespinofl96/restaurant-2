@@ -31,8 +31,8 @@
             "scripts": []
           },
           "configurations": {
-            "github-pages":{
-              "baseHref": "https://melyespinofl96.github.io/restaurant-2/"
+            "master":{
+              "baseHref":"https://melyespinofl96.github.io/restaurant-2/"
             },
             "production": {
               "budgets": [
