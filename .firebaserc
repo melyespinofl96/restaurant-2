@@ -1,14 +1,5 @@
 {
-  "targets": {
-    "restaurant-website-8ed14": {
-      "hosting": {
-        "restaurant-2": [
-          "restaurant-website-8ed14"
-        ]
-      }
-    }
-  },
   "projects": {
-    "default": "restaurant-website-8ed14"
+    "default": "restaurant-website-3dd10"
   }
 }
