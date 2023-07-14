@@ -6,11 +6,11 @@
         <h3 class="text-xl font-bold m-2 text-white">< Back To Menu</h3>
       </div-->
       
-      <nav class="flex overflow-x-auto">
+      <nav class="flex overflow-x-auto py-6">
         <div class=" flex-shrink-0">
 
           <!-- Desktop Menu Nav -->
-          <ul class="hidden sm:flex flex-wrap space-x-4 relative align-middle">
+          <ul class="hidden sm:flex flex-wrap space-x-10 relative align-middle">
             <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
                 (click)="menuToggle()" style="cursor:pointer;">Menu</Button>
