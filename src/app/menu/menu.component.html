@@ -18,36 +18,37 @@
       
           <!-- Desktop Navigation Links -->
           <ul class="hidden sm:flex space-x-4 relative align-middle" id="nav-links">
-            <li>
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="menuToggle()" style="cursor:pointer;">Menu</p>
-            </li>
-            <li>
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</p>
+            <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
+              <Button class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="menuToggle()" style="cursor:pointer;">Menu</Button>
             </li>
 
-            <li>
+            <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
+              <Button class="hover:text-gray-300 text-2xl font-bold"
+                (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
+            </li>
+
+            <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <p class="hover:text-gray-300 text-2xl font-bold" 
                 (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</p>
             </li>
 
-            <li>
+            <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <p class="hover:text-gray-300 text-2xl font-bold" 
                 (click)="tacosToggle()" style="cursor:pointer;">Tacos</p>
             </li>
 
-            <li>
+            <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <p class="hover:text-gray-300 text-2xl font-bold" 
                 (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</p>
             </li>
 
-            <li>
+            <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <p class="hover:text-gray-300 text-2xl font-bold" 
                 (click)="dessertsToggle()" style="cursor:pointer;">Desserts</p>
             </li>
 
-            <li>
+            <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <p class="hover:text-gray-300 text-2xl font-bold" 
                 (click)="beveragesToggle()" style="cursor:pointer;">Beverages</p>
             </li>
