@@ -2,9 +2,51 @@
 <section class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-8" id="menu-section">
     <div class="container mx-auto">
 
-     <div *ngIf="menu !=true" class="bg-red-500 shadow-md p-2 my-5 max-w-fit" (click)="menuToggle()" style="cursor:pointer;">
+      <!--div *ngIf="menu !=true" class="bg-red-500 shadow-md p-2 my-5 max-w-fit" (click)="menuToggle()" style="cursor:pointer;">
         <h3 class="text-xl font-bold m-2 text-white">< Back To Menu</h3>
-     </div>
+      </div-->
+
+      <nav class=" text-black p-4">
+        <div class="container mx-auto flex justify-between items-center relative">
+          
+          <!-- Mobile Menu Button -->
+          <button class="flex items-center justify-center sm:hidden text-2xl font-bold relative">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+      
+          <!-- Desktop Navigation Links -->
+          <ul class="hidden sm:flex space-x-4 relative align-middle" id="nav-links">
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</p>
+            </li>
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</p>
+            </li>
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="tacosToggle()" style="cursor:pointer;">Tacos</p>
+            </li>
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</p>
+            </li>
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="dessertsToggle()" style="cursor:pointer;">Desserts</p>
+            </li>
+            <li>
+              <p class="hover:text-gray-300 text-2xl font-bold" 
+                (click)="beveragesToggle()" style="cursor:pointer;">Beverages</p>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      
       
       <!--Food Categories-->
       <h2  *ngIf="menu" class="text-6xl mb-8">Menu</h2>
