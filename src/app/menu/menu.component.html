@@ -19,38 +19,38 @@
           <!-- Desktop Navigation Links -->
           <ul class="hidden sm:flex space-x-4 relative align-middle" id="nav-links">
             <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold" 
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
                 (click)="menuToggle()" style="cursor:pointer;">Menu</Button>
             </li>
 
             <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold"
+              <Button class="hover:text-gray-300 text-3xl font-bold"
                 (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
             </li>
 
             <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</p>
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
+                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</Button>
             </li>
 
             <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="tacosToggle()" style="cursor:pointer;">Tacos</p>
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
+                (click)="tacosToggle()" style="cursor:pointer;">Tacos</Button>
             </li>
 
             <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</p>
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
+                (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</Button>
             </li>
 
             <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="dessertsToggle()" style="cursor:pointer;">Desserts</p>
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
+                (click)="dessertsToggle()" style="cursor:pointer;">Desserts</Button>
             </li>
 
             <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <p class="hover:text-gray-300 text-2xl font-bold" 
-                (click)="beveragesToggle()" style="cursor:pointer;">Beverages</p>
+              <Button class="hover:text-gray-300 text-3xl font-bold" 
+                (click)="beveragesToggle()" style="cursor:pointer;">Beverages</Button>
             </li>
           </ul>
 
@@ -59,7 +59,7 @@
       
       
       <!--Food Categories-->
-      <h2  *ngIf="menu" class="text-6xl mb-8">Menu</h2>
+      <!--h2  *ngIf="menu" class="text-6xl mb-8">Menu</h2-->
       <div *ngIf="menu" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white shadow-lg p-4" (click)="appetizersToggle()" style="cursor:pointer;">
             <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
@@ -113,7 +113,7 @@
       </div>
       
       <!--Appetizers-->
-      <h2  *ngIf="appetizers" class="text-6xl mb-8">Appetizers</h2>
+      <!--h2  *ngIf="appetizers" class="text-6xl mb-8">Appetizers</h2-->
       <div *ngIf="appetizers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4" >
           <img src="assets\Food\guacamoleAndChips.jpg" alt="Guacamole and Chips" class="w-full h-auto mb-4">
@@ -150,7 +150,7 @@
       </div>
 
       <!--Soups and Salads-->
-      <h2  *ngIf="soupsAndSalads" class="text-6xl mb-8">Soups and Salads</h2>
+      <!--h2  *ngIf="soupsAndSalads" class="text-6xl mb-8">Soups and Salads</h2-->
       <div *ngIf="soupsAndSalads" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\tortillaSoup.jpg" alt="Tortilla Soup" class="w-full h-auto mb-4">
@@ -180,7 +180,7 @@
       </div>
 
       <!--Tacos-->
-      <h2  *ngIf="tacos" class="text-6xl mb-8">Tacos</h2>
+      <!--h2  *ngIf="tacos" class="text-6xl mb-8">Tacos</h2-->
       <div *ngIf="tacos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\carneAsadaTacos.jpg" alt="Carne Asada Tacos" class="w-full h-auto mb-4">
@@ -217,7 +217,7 @@
       </div>
 
       <!--Enchiladas-->
-      <h2  *ngIf="enchiladas" class="text-6xl mb-8">Enchiladas</h2>
+      <!--h2  *ngIf="enchiladas" class="text-6xl mb-8">Enchiladas</h2-->
       <div *ngIf="enchiladas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\chickenEnchiladas.jpg" alt="Chicken Enchiladas" class="w-full h-auto mb-4">
@@ -247,7 +247,7 @@
       </div>
 
       <!--Desserts-->
-      <h2  *ngIf="desserts" class="text-6xl mb-8">Desserts</h2>
+      <!--h2  *ngIf="desserts" class="text-6xl mb-8">Desserts</h2-->
       <div *ngIf="desserts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\flan.jpg" alt="Flan" class="w-full h-auto mb-4">
@@ -277,7 +277,7 @@
       </div>
 
       <!--Beverages-->
-      <h2  *ngIf="beverages" class="text-6xl mb-8">Beverages</h2>
+      <!--h2  *ngIf="beverages" class="text-6xl mb-8">Beverages</h2-->
       <div *ngIf="beverages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\margarita.jpg" alt="Appetizers" class="w-full h-auto mb-4">
