@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../_services/language.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,6 +11,13 @@ export class NavComponent implements OnInit{
 
   mobileMenu:boolean = false
 
+  currentLanguage: string;
+  languageDropdownOpen = false;
+
+  constructor(private languageService: LanguageService) {
+    this.currentLanguage = this.languageService.getCurrentLanguage();
+  }
+
   ngOnInit(): void {
     this.mobileMenu = false
   }
@@ -19,5 +27,16 @@ export class NavComponent implements OnInit{
       this.mobileMenu = true
     else
       this.mobileMenu = false
+  }
+
+  /*Language*/
+  toggleLanguageDropdown(): void {
+    this.languageDropdownOpen = !this.languageDropdownOpen;
+  }
+
+  setLanguage(language: string): void {
+    this.languageService.setLanguage(language);
+    this.currentLanguage = this.languageService.getCurrentLanguage();
+    this.toggleLanguageDropdown()
   }
 }
