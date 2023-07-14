@@ -10,77 +10,91 @@
         <div class=" flex-shrink-0">
 
           <!-- Desktop Menu Nav -->
-          <ul class="hidden sm:flex flex-wrap space-x-10 relative align-middle">
+          <ul class="hidden sm:flex flex-wrap space-x-8 relative align-middle">
             <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="menuToggle()" style="cursor:pointer;">Menu</Button>
             </li>
 
             <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0"
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
             </li>
 
             <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</Button>
             </li>
 
             <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="tacosToggle()" style="cursor:pointer;">Tacos</Button>
             </li>
 
             <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</Button>
             </li>
 
             <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="dessertsToggle()" style="cursor:pointer;">Desserts</Button>
             </li>
 
             <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-3xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-3xl font-bold flex-shrink-0"
                 (click)="beveragesToggle()" style="cursor:pointer;">Beverages</Button>
             </li>
           </ul>
 
           <!-- Mobile Menu Nav -->
           <ul class="sm:hidden flex flex-wrap space-x-4 relative align-middle">
-            <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+            <li [class]="menu === true ? 'bg-red-500 rounded-lg p-1 text-white' : '' ">
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="menuToggle()" style="cursor:pointer;">Menu</Button>
             </li>
 
             <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0"
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
             </li>
 
             <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</Button>
             </li>
 
             <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="tacosToggle()" style="cursor:pointer;">Tacos</Button>
             </li>
 
             <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</Button>
             </li>
 
             <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="dessertsToggle()" style="cursor:pointer;">Desserts</Button>
             </li>
 
             <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
-              <Button class="hover:text-gray-300 text-2xl font-bold flex-shrink-0" 
+              <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
+                            text-2xl font-bold flex-shrink-0"
                 (click)="beveragesToggle()" style="cursor:pointer;">Beverages</Button>
             </li>
           </ul>
