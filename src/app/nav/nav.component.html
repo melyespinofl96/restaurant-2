@@ -1,7 +1,20 @@
 <nav class="bg-red-700 text-white p-4">
   <div class="container mx-auto flex justify-between items-center relative">
-    <!-- Logo -->
-    <img class="h-12 w-auto" src="assets/logo.png" alt="Logo" >
+
+    
+    <ul class="hidden sm:flex space-x-4 relative">
+      <!-- Logo -->
+      <img class="h-12 w-auto" src="assets/logo.png" alt="Logo">
+
+      <!-- Language Dropdown -->
+      <div class="py-4 px-4">
+        <a class="hover:text-gray-300 text-lg font-bold" (click)="toggleLanguageDropdown()">Language</a>
+        <ul *ngIf="languageDropdownOpen" class="absolute bg-red-700 mt-2 py-2 w-40 left-36 top-12 rounded-md shadow-lg">
+          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="setLanguage('en')">English</a></li>
+          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="setLanguage('es')">Español</a></li>
+        </ul>
+      </div>
+    </ul>
     
     <!-- Mobile Menu Button -->
     <button class="flex items-center justify-center sm:hidden text-2xl font-bold relative" (click)="mobileMenuToggle()">
@@ -26,16 +39,8 @@
         <a class="hover:text-gray-300 text-lg font-bold"
           routerLink="/contact" routerLinkActive="active">{{contact}}</a>
       </li>
-
-      <li class="relative">
-        <a class="hover:text-gray-300 text-lg font-bold" (click)="toggleLanguageDropdown()">Language</a>
-        <ul *ngIf="languageDropdownOpen" class="absolute bg-red-700 mt-2 py-2 w-40 right-0 rounded-md shadow-lg">
-          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="setLanguage('en')">English</a></li>
-          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="setLanguage('es')">Español</a></li>
-        </ul>
-      </li>
-      
     </ul>
+
   </div>
 </nav>
 

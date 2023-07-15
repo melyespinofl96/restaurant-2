@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import { LanguageService } from '../_services/language.service';
-import { HttpClient } from '@angular/common/http';
 import test from '../_files/test.json';
 
 @Component({
@@ -10,6 +9,7 @@ import test from '../_files/test.json';
 })
 export class NavComponent {
   mobileMenu = false;
+
   currentLanguage: string;
   languageDropdownOpen = false;
 
@@ -17,7 +17,7 @@ export class NavComponent {
   menu: string = test.Language[0].navBar[0].menu
   contact: string = test.Language[0].navBar[0].contact
 
-  constructor(private languageService: LanguageService, private http: HttpClient) {
+  constructor(private languageService: LanguageService) {
     this.currentLanguage = this.languageService.getCurrentLanguage();
   }
 
@@ -47,10 +47,4 @@ export class NavComponent {
       this.contact = test.Language[1].navBar[0].contact
     }
   }
-
-  /*
-  getDataFromJsonFile1(): void {
-    console.log(test.Language[0].navBar[0].home);
-  }
-  */
 }
