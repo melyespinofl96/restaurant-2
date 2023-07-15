@@ -1,35 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { LanguageService } from '../_services/language.service';
+import { HttpClient } from '@angular/common/http';
+import test from '../_files/test.json';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-
-export class NavComponent implements OnInit{
-
-  mobileMenu:boolean = false
-
+export class NavComponent {
+  mobileMenu = false;
   currentLanguage: string;
   languageDropdownOpen = false;
 
-  constructor(private languageService: LanguageService) {
+  home: string = test.Language[0].navBar[0].home
+  menu: string = test.Language[0].navBar[0].menu
+  contact: string = test.Language[0].navBar[0].contact
+
+  constructor(private languageService: LanguageService, private http: HttpClient) {
     this.currentLanguage = this.languageService.getCurrentLanguage();
   }
 
-  ngOnInit(): void {
-    this.mobileMenu = false
+  mobileMenuToggle(): void {
+    this.mobileMenu = !this.mobileMenu;
   }
 
-  mobileMenuToggle(){
-    if (this.mobileMenu == false)
-      this.mobileMenu = true
-    else
-      this.mobileMenu = false
-  }
-
-  /*Language*/
   toggleLanguageDropdown(): void {
     this.languageDropdownOpen = !this.languageDropdownOpen;
   }
@@ -37,6 +32,25 @@ export class NavComponent implements OnInit{
   setLanguage(language: string): void {
     this.languageService.setLanguage(language);
     this.currentLanguage = this.languageService.getCurrentLanguage();
-    this.toggleLanguageDropdown()
+    this.toggleLanguage(this.currentLanguage);
+    this.toggleLanguageDropdown();
   }
+
+  toggleLanguage(language: string){
+    if(language == 'en'){
+      this.home = test.Language[0].navBar[0].home
+      this.menu = test.Language[0].navBar[0].menu
+      this.contact = test.Language[0].navBar[0].contact
+    }else if(language == 'es'){
+      this.home = test.Language[1].navBar[0].home
+      this.menu = test.Language[1].navBar[0].menu
+      this.contact = test.Language[1].navBar[0].contact
+    }
+  }
+
+  /*
+  getDataFromJsonFile1(): void {
+    console.log(test.Language[0].navBar[0].home);
+  }
+  */
 }
