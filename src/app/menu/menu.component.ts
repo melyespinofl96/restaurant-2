@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../_services/language.service';
+import translation from '../_files/translation.json';
 
 @Component({
   selector: 'app-menu',
