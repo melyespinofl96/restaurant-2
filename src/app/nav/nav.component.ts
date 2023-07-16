@@ -29,9 +29,10 @@ export class NavComponent {
     this.languageDropdownOpen = !this.languageDropdownOpen;
   }
 
-  setLanguage(language: string): void {
-    this.languageService.setLanguage(language);
-    this.currentLanguage = this.languageService.getCurrentLanguage();
+  switchLanguage(): void {
+    this.currentLanguage = this.languageService.getCurrentLanguage() === 'en' ? 'es' : 'en';
+    this.languageService.setLanguage(this.currentLanguage);
+    
     this.toggleLanguage(this.currentLanguage);
     this.toggleLanguageDropdown();
   }

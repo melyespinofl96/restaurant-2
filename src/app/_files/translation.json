@@ -1,0 +1,39 @@
+{
+    "Language": {
+        "en": {
+            "navBar": {
+                "home": "Home",
+                "menu": "Menu",
+                "contact": "Contact"
+            },
+            "footerBar": {
+                "contactUsTitle": "Contact Us",
+                "contactInstructions": "For reservations or any inquiries, please feel free to contact us:",
+                "contactNumber": "Phone: 123-456-7890",
+                "ContactEmail": "Email: customer.service@mexicankitchen.com",
+                "LetConnectTitle": "Let's Connect",
+                "legalTitle": "Legal",
+                "privacyPolicy": "Privacy Policy",
+                "accessibility": "Accessibility Statement"
+            }
+        },
+        "es": {
+            "navBar": {
+                  "home": "Inicio",
+                  "menu": "Menú",
+                  "contact": "Contacto"
+            },
+            "footerBar": {
+                "contactUsTitle": "Contáctenos",
+                "contactInstructions": "Para reservas o cualquier consulta, no dude en ponerse en contacto con nosotros:",
+                "contactNumber": "Teléfono: 123-456-7890",
+                "ContactEmail": "Correo electrónico: customer.service@mexicankitchen.com",
+                "LetConnectTitle": "vamos a conectar",
+                "legalTitle": "Legal",
+                "privacyPolicy": "política de privacidad",
+                "accessibility": "Declaración de accesibilidad"
+            }
+        }
+    }
+}
+  

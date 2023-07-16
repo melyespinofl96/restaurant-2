@@ -1,48 +1,81 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../_services/language.service';
-import test from '../_files/test.json';
+import translation from '../_files/translation.json';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit{
 
   currentLanguage: string;
 
-  contactUs: string = test.Language[0].footerBar[0].contactUsTitle
-  letsConnect: string = test.Language[0].footerBar[0].LetConnectTitle
-  legal: string = test.Language[0].footerBar[0].legalTitle
-  instructions: string = test.Language[0].footerBar[0].contactInstructions
-  phone: string = test.Language[0].footerBar[0].contactNumber
-  email: string = test.Language[0].footerBar[0].ContactEmail
-  privacyPolicy: string = test.Language[0].footerBar[0].privacyPolicy
-  accessibility: string = test.Language[0].footerBar[0].accessibility
+  contactUs: string | undefined;
+  letsConnect: string | undefined;
+  legal: string | undefined;
+  instructions: string | undefined;
+  phone: string | undefined;
+  email: string | undefined;
+  privacyPolicy: string | undefined;
+  accessibility: string | undefined;
 
   constructor(private languageService: LanguageService) {
     this.currentLanguage = this.languageService.getCurrentLanguage();
   }
 
-  toggleLanguage(language: string){
-    if(language == 'en'){
-      this.contactUs = test.Language[0].footerBar[0].contactUsTitle
-      this.letsConnect = test.Language[0].footerBar[0].LetConnectTitle
-      this.legal = test.Language[0].footerBar[0].legalTitle
-      this.instructions = test.Language[0].footerBar[0].contactInstructions
-      this.phone = test.Language[0].footerBar[0].contactNumber
-      this.email = test.Language[0].footerBar[0].ContactEmail
-      this.privacyPolicy = test.Language[0].footerBar[0].privacyPolicy
-      this.accessibility = test.Language[0].footerBar[0].accessibility
-    }else if(language == 'es'){
-      this.contactUs = test.Language[1].footerBar[0].contactUsTitle
-      this.letsConnect = test.Language[1].footerBar[0].LetConnectTitle
-      this.legal = test.Language[1].footerBar[0].legalTitle
-      this.instructions = test.Language[1].footerBar[0].contactInstructions
-      this.phone = test.Language[1].footerBar[0].contactNumber
-      this.email = test.Language[1].footerBar[0].ContactEmail
-      this.privacyPolicy = test.Language[1].footerBar[0].privacyPolicy
-      this.accessibility = test.Language[1].footerBar[0].accessibility
-    }
+  ngOnInit(): void {
+    this.contactUs = this.getTranslatedText('contactUs');
+    this.letsConnect = this.getTranslatedText('letsConnect');
+    this.legal = this.getTranslatedText('legal');
+    this.instructions = this.getTranslatedText('instructions');
+    this.phone = this.getTranslatedText('phone');
+    this.email = this.getTranslatedText('email');
+    this.privacyPolicy = this.getTranslatedText('privacyPolicy');
+    this.accessibility = this.getTranslatedText('accessibility');
+
+    this.languageService.languageChanged.subscribe(language => {
+      this.contactUs = this.getTranslatedText('contactUs');
+      this.letsConnect = this.getTranslatedText('letsConnect');
+      this.legal = this.getTranslatedText('legal');
+      this.instructions = this.getTranslatedText('instructions');
+      this.phone = this.getTranslatedText('phone');
+      this.email = this.getTranslatedText('email');
+      this.privacyPolicy = this.getTranslatedText('privacyPolicy');
+      this.accessibility = this.getTranslatedText('accessibility');
+    });
+  }
+
+  private getTranslatedText(key: string): string {
+    const translations: { [key: string]: { [lang: string]: string } } = {
+      contactUs: {
+        en: translation.Language.en.footerBar.contactUsTitle,
+        es: translation.Language.es.footerBar.contactUsTitle
+      },letsConnect:{
+        en: translation.Language.en.footerBar.LetConnectTitle,
+        es: translation.Language.es.footerBar.LetConnectTitle
+      },legal:{
+        en: translation.Language.en.footerBar.legalTitle,
+        es: translation.Language.es.footerBar.legalTitle
+      },instructions:{
+        en: translation.Language.en.footerBar.contactInstructions,
+        es: translation.Language.es.footerBar.contactInstructions
+      },phone:{
+        en: translation.Language.en.footerBar.contactNumber,
+        es: translation.Language.es.footerBar.contactNumber
+      },email:{
+        en: translation.Language.en.footerBar.ContactEmail,
+        es: translation.Language.es.footerBar.ContactEmail
+      },privacyPolicy:{
+        en: translation.Language.en.footerBar.privacyPolicy,
+        es: translation.Language.es.footerBar.privacyPolicy
+      },accessibility:{
+        en: translation.Language.en.footerBar.accessibility,
+        es: translation.Language.es.footerBar.accessibility
+      }
+    };
+
+    const currentLanguage = this.languageService.getCurrentLanguage();
+    return translations[key][currentLanguage] || '';
   }
 }
