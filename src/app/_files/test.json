@@ -2,7 +2,7 @@
   "Language": [
     {
       "type": "en",
-      "menuPage": [
+      "homePage": [
         {
           "specialsTitle": "Specials",
           "specialsInfo": "Buy 1 and get 1 free",
@@ -191,7 +191,7 @@
     },
     {
       "type": "es",
-      "menuPage": [
+      "homePage": [
         {
           "specialsTitle": "Especiales",
           "specialsInfo": "Compre 1 y obtenga 1 gratis",

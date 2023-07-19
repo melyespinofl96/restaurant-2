@@ -15,7 +15,18 @@
                 "legalTitle": "Legal",
                 "privacyPolicy": "Privacy Policy",
                 "accessibility": "Accessibility Statement"
-            },"menu": {
+            },"homePage": [
+              {
+                "specialsTitle": "Specials",
+                "specialsInfo": "Buy 1 and get 1 free",
+                "specialEnds": "Offer ends 08/01/2023",
+                "specialItems": [
+                  "Shrimp Cocktail",
+                  "Fajita Quesadilla",
+                  "Chicken Jalapeño Nachos"
+                ]
+              }
+            ],"menu": {
                 "menu": [
                   "Menu",
                   "Appetizers",
@@ -180,8 +191,18 @@
                 "legalTitle": "Legal",
                 "privacyPolicy": "política de privacidad",
                 "accessibility": "Declaración de accesibilidad"
-            },
-            "menu": {
+            },"homePage": [
+              {
+                "specialsTitle": "Especiales",
+                "specialsInfo": "Compre 1 y obtenga 1 gratis",
+                "specialEnds": "La oferta finaliza el 01/08/2023",
+                "specialItems": [
+                  "Cóctel de camarón",
+                  "Fajita Quesadilla",
+                  "Nachos De Pollo Y Jalapeño"
+                ]
+              }
+            ],"menu": {
                 "menu": [
                   "Menú",
                   "Aperitivos",
