@@ -42,6 +42,13 @@ export class MenuComponent{
   appetizersName6: string | undefined;
   appetizersInfo6: string | undefined;
 
+  soupsAndSaladsName0: string | undefined;
+  soupsAndSaladsInfo0: string | undefined;
+  soupsAndSaladsName1: string | undefined;
+  soupsAndSaladsInfo1: string | undefined;
+  soupsAndSaladsName2: string | undefined;
+  soupsAndSaladsInfo2: string | undefined;
+
   constructor(private languageService: LanguageService) {
     this.currentLanguage = this.languageService.getCurrentLanguage();
   }
@@ -65,6 +72,13 @@ export class MenuComponent{
     this.appetizersName3 = this.getTranslatedText('appetizersName3');
     this.appetizersInfo3 = this.getTranslatedText('appetizersInfo3');
 
+    this.soupsAndSaladsName0 = this.getTranslatedText('soupsAndSaladsName0');
+    this.soupsAndSaladsInfo0 = this.getTranslatedText('soupsAndSaladsInfo0');
+    this.soupsAndSaladsName1 = this.getTranslatedText('soupsAndSaladsName1');
+    this.soupsAndSaladsInfo1 = this.getTranslatedText('soupsAndSaladsInfo1');
+    this.soupsAndSaladsName2 = this.getTranslatedText('soupsAndSaladsName2');
+    this.soupsAndSaladsInfo2 = this.getTranslatedText('soupsAndSaladsInfo2');
+
     this.languageService.languageChanged.subscribe(language => {
       this.categories0 = this.getTranslatedText('categories0');
       this.categories1 = this.getTranslatedText('categories1');
@@ -81,6 +95,13 @@ export class MenuComponent{
       this.appetizersInfo2 = this.getTranslatedText('appetizersInfo2');
       this.appetizersName3 = this.getTranslatedText('appetizersName3');
       this.appetizersInfo3 = this.getTranslatedText('appetizersInfo3');
+
+      this.soupsAndSaladsName0 = this.getTranslatedText('soupsAndSaladsName0');
+      this.soupsAndSaladsInfo0 = this.getTranslatedText('soupsAndSaladsInfo0');
+      this.soupsAndSaladsName1 = this.getTranslatedText('soupsAndSaladsName1');
+      this.soupsAndSaladsInfo1 = this.getTranslatedText('soupsAndSaladsInfo1');
+      this.soupsAndSaladsName2 = this.getTranslatedText('soupsAndSaladsName2');
+      this.soupsAndSaladsInfo2 = this.getTranslatedText('soupsAndSaladsInfo2');
 
     });
   }
@@ -203,6 +224,29 @@ export class MenuComponent{
         en: translation.Language.en.menu.appetizers[3].description,
         es: translation.Language.es.menu.appetizers[3].description
       },
+
+      //Soups and Salads
+      soupsAndSaladsName0: {
+        en: translation.Language.en.menu.soupsAndSalads[0].Name,
+        es: translation.Language.es.menu.soupsAndSalads[0].Name
+      },soupsAndSaladsInfo0: {
+        en: translation.Language.en.menu.soupsAndSalads[0].description,
+        es: translation.Language.es.menu.soupsAndSalads[0].description
+      },soupsAndSaladsName1: {
+        en: translation.Language.en.menu.soupsAndSalads[1].Name,
+        es: translation.Language.es.menu.soupsAndSalads[1].Name
+      },soupsAndSaladsInfo1: {
+        en: translation.Language.en.menu.soupsAndSalads[1].description,
+        es: translation.Language.es.menu.soupsAndSalads[1].description
+      },soupsAndSaladsName2: {
+        en: translation.Language.en.menu.soupsAndSalads[2].Name,
+        es: translation.Language.es.menu.soupsAndSalads[2].Name
+      },soupsAndSaladsInfo2: {
+        en: translation.Language.en.menu.soupsAndSalads[2].description,
+        es: translation.Language.es.menu.soupsAndSalads[2].description
+      },
+
+      
     };
 
     const currentLanguage = this.languageService.getCurrentLanguage();

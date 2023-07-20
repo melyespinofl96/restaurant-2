@@ -20,37 +20,37 @@
             <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
+                (click)="appetizersToggle()" style="cursor:pointer;">{{categories0}}</Button>
             </li>
 
             <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</Button>
+                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">{{categories1}}</Button>
             </li>
 
             <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="tacosToggle()" style="cursor:pointer;">Tacos</Button>
+                (click)="tacosToggle()" style="cursor:pointer;">{{categories2}}</Button>
             </li>
 
             <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</Button>
+                (click)="enchiladasToggle()" style="cursor:pointer;">{{categories3}}</Button>
             </li>
 
             <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="dessertsToggle()" style="cursor:pointer;">Desserts</Button>
+                (click)="dessertsToggle()" style="cursor:pointer;">{{categories4}}</Button>
             </li>
 
             <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-3xl font-bold flex-shrink-0"
-                (click)="beveragesToggle()" style="cursor:pointer;">Beverages</Button>
+                (click)="beveragesToggle()" style="cursor:pointer;">{{categories5}}</Button>
             </li>
           </ul>
 
@@ -109,10 +109,10 @@
           <div class="bg-white shadow-lg p-4" (click)="appetizersToggle()" style="cursor:pointer;">
             <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">{{categories0}}</h3>
-            <p class="text-gray-600">Guacamole and Chips</p>
-            <p class="text-gray-600">Queso Fundido</p>
-            <p class="text-gray-600">Ceviche</p>
-            <p class="text-gray-600">Taquitos</p>
+            <p class="text-gray-600">{{appetizersName0}}</p>
+            <p class="text-gray-600">{{appetizersName1}}</p>
+            <p class="text-gray-600">{{appetizersName2}}</p>
+            <p class="text-gray-600">{{appetizersName3}}</p>
           </div>
 
           <div class="bg-white shadow-lg p-4" (click)="soupsAndSaladsToggle()" style="cursor:pointer;">
@@ -199,22 +199,22 @@
       <div *ngIf="soupsAndSalads" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\tortillaSoup.jpg" alt="Tortilla Soup" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Tortilla Soup</h3>
-          <p class="text-gray-600">Savory shredded chicken wrapped in crispy tortillas</p>
+          <h3 class="text-xl font-bold mb-2">{{soupsAndSaladsName0}}</h3>
+          <p class="text-gray-600">{{soupsAndSaladsInfo0}}</p>
           <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\chickenMexicanSalad.jpg" alt="Chicken Mexican Salad" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Chicken Mexican Salad</h3>
-          <p class="text-gray-600">Grilled chicken, crisp lettuce, vibrant veggies, zesty dressing</p>
+          <h3 class="text-xl font-bold mb-2">{{soupsAndSaladsName1}}</h3>
+          <p class="text-gray-600">{{soupsAndSaladsInfo1}}</p>
           <span class="text-red-500 font-bold">$4.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\pozole.jpg" alt="Pozole" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Pozole</h3>
-          <p class="text-gray-600">Savor the flavors of Pozole: a hearty Mexican soup with tender pork, hominy, and aromatic spices</p>
+          <h3 class="text-xl font-bold mb-2">{{soupsAndSaladsName2}}</h3>
+          <p class="text-gray-600">{{soupsAndSaladsInfo2}}</p>
           <span class="text-red-500 font-bold">$5.99</span>
         </div>
 
