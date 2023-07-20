@@ -24,6 +24,11 @@
                   "Shrimp Cocktail",
                   "Fajita Quesadilla",
                   "Chicken Jalapeño Nachos"
+                ],
+                "specialItemsInfo": [
+                  "Succulent shrimp, crisp lettuce, and tangy sauce.",
+                  "Cheesy and loaded, the big fajita quesadilla is a flavor-packed sensation.",
+                  "Nacho chips toped with grilled chicken, melted fiesta blend cheese, and jalapenos"
                 ]
               }
             ],"menu": {
@@ -200,6 +205,11 @@
                   "Cóctel de camarón",
                   "Fajita Quesadilla",
                   "Nachos De Pollo Y Jalapeño"
+                ],
+                "specialItemsInfo": [
+                  "Camarones suculentos, lechuga crujiente y salsa picante.",
+                  "Cursi y cargada, la gran quesadilla de fajita es una sensación llena de sabor.",
+                  "Chips de nacho cubiertos con pollo a la parrilla, mezcla de queso derretido para fiestas y jalapeños"
                 ]
               }
             ],"menu": {
