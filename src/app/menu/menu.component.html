@@ -108,7 +108,7 @@
       <div *ngIf="menu" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white shadow-lg p-4" (click)="appetizersToggle()" style="cursor:pointer;">
             <img src="assets\Food\guacamoleAndChips.jpg" alt="Appetizers" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Appetizers</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories0}}</h3>
             <p class="text-gray-600">Guacamole and Chips</p>
             <p class="text-gray-600">Queso Fundido</p>
             <p class="text-gray-600">Ceviche</p>
@@ -117,7 +117,7 @@
 
           <div class="bg-white shadow-lg p-4" (click)="soupsAndSaladsToggle()" style="cursor:pointer;">
             <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Soups and Salads</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories1}}</h3>
             <p class="text-gray-600">Tortilla Soup</p>
             <p class="text-gray-600">Chicken Mexican Salad</p>
             <p class="text-gray-600">Pozole</p>
@@ -125,7 +125,7 @@
 
           <div class="bg-white shadow-lg p-4" (click)="tacosToggle()" style="cursor:pointer;">
             <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Tacos</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories2}}</h3>
             <p class="text-gray-600">Carne Asada Tacos</p>
             <p class="text-gray-600">Al Pastor Tacos</p>
             <p class="text-gray-600">Baja Fish Tacos</p>
@@ -134,7 +134,7 @@
 
           <div class="bg-white shadow-lg p-4" (click)="enchiladasToggle()" style="cursor:pointer;">
             <img src="assets\Food\enchiladas.jpg" alt="Enchiladas" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Enchiladas</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories3}}</h3>
             <p class="text-gray-600">Chicken Enchiladas</p>
             <p class="text-gray-600">Cheese and Spinach Enchiladas</p>
             <p class="text-gray-600">Enchiladas Suizas</p>
@@ -142,7 +142,7 @@
 
           <div class="bg-white shadow-lg p-4" (click)="dessertsToggle()" style="cursor:pointer;">
             <img src="assets\Food\cake.jpg" alt="Desserts" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Desserts</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories4}}</h3>
             <p class="text-gray-600">Flan</p>
             <p class="text-gray-600">Churros</p>
             <p class="text-gray-600">Tres Leches Cake</p>
@@ -150,7 +150,7 @@
 
           <div class="bg-white shadow-lg p-4" (click)="beveragesToggle()" style="cursor:pointer;">
             <img src="assets\Food\margaritas.jpg" alt="Beverages" class="w-full h-auto mb-4">
-            <h3 class="text-xl font-bold mb-2">Beverages</h3>
+            <h3 class="text-xl font-bold mb-2">{{categories5}}</h3>
             <p class="text-gray-600">Margaritas</p>
             <p class="text-gray-600">Agua Frescas</p>
             <p class="text-gray-600">Mexican Beer</p>
@@ -162,29 +162,29 @@
       <div *ngIf="appetizers" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white shadow-lg p-4" >
           <img src="assets\Food\guacamoleAndChips.jpg" alt="Guacamole and Chips" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Guacamole and Chips</h3>
-          <p class="text-gray-600">Delight in creamy guacamole paired with crispy tortilla chips for a satisfying appetizer</p>
+          <h3 class="text-xl font-bold mb-2">{{appetizersName0}}</h3>
+          <p class="text-gray-600">{{appetizersInfo0}}</p>
           <span class="text-red-500 font-bold">$2.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\quesoFundido.jpg" alt="Queso Fundido" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Queso Fundido</h3>
-          <p class="text-gray-600">Hot melted cheese and spicy chorizo that is often served flambé</p>
+          <h3 class="text-xl font-bold mb-2">{{appetizersName1}}</h3>
+          <p class="text-gray-600">{{appetizersInfo1}}</p>
           <span class="text-red-500 font-bold">$5.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\ceviche.jpg" alt="Ceviche" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Ceviche</h3>
-          <p class="text-gray-600">Marinated shrimp in citrus juices, combined with herbs and vegetables for a refreshing seafood experience</p>
+          <h3 class="text-xl font-bold mb-2">{{appetizersName2}}</h3>
+          <p class="text-gray-600">{{appetizersInfo2}}</p>
           <span class="text-red-500 font-bold">$6.99</span>
         </div>
 
         <div class="bg-white shadow-lg p-4">
           <img src="assets\Food\taquitos.jpg" alt="Taquitos" class="w-full h-auto mb-4">
-          <h3 class="text-xl font-bold mb-2">Taquitos</h3>
-          <p class="text-gray-600">Savory shredded chicken wrapped in crispy tortillas</p>
+          <h3 class="text-xl font-bold mb-2">{{appetizersName3}}</h3>
+          <p class="text-gray-600">{{appetizersInfo3}}</p>
           <span class="text-red-500 font-bold">$4.99</span>
         </div>
 

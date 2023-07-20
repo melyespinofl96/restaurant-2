@@ -32,8 +32,7 @@
                 ]
               }
             ],"menu": {
-                "menu": [
-                  "Menu",
+                "categories": [
                   "Appetizers",
                   "Soups and Salads",
                   "Tacos",
@@ -213,16 +212,14 @@
                 ]
               }
             ],"menu": {
-                "menu": [
-                  "Menú",
+                "categories": [
                   "Aperitivos",
                   "Sopas y ensaladas",
                   "Tacos",
                   "Enchiladas",
                   "Postres",
                   "Bebidas"
-                ],
-                "appetizers": [
+                ],"appetizers": [
                   {
                     "Name": "Guacamole y papas fritas",
                     "description": "Deléitese con el guacamole cremoso combinado con chips de tortilla crujientes para un aperitivo satisfactorio"
