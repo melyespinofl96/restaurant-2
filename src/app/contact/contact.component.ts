@@ -27,7 +27,6 @@ export class ContactComponent{
   }
 
   ngOnInit(): void {
-    //this.contactUs = this.getTranslatedText('contactUs');
     this.aboutTitle = this.getTranslatedText('aboutTitle');
     this.aboutText = this.getTranslatedText('aboutText');
     this.addressTitle = this.getTranslatedText('addressTitle');
@@ -41,7 +40,6 @@ export class ContactComponent{
     this.hoursSun = this.getTranslatedText('hoursSun');
 
     this.languageService.languageChanged.subscribe(language => {
-      //this.contactUs = this.getTranslatedText('contactUs');
       this.aboutTitle = this.getTranslatedText('aboutTitle');
       this.aboutText = this.getTranslatedText('aboutText');
       this.addressTitle = this.getTranslatedText('addressTitle');
