@@ -17,8 +17,14 @@ export class NavComponent {
   menu: string = test.Language[0].navBar[0].menu
   contact: string = test.Language[0].navBar[0].contact
 
+  language: string | undefined;
+
   constructor(private languageService: LanguageService) {
     this.currentLanguage = this.languageService.getCurrentLanguage();
+  }
+
+  ngOnInit(): void {
+    this.language = "Language"
   }
 
   mobileMenuToggle(): void {
@@ -42,10 +48,12 @@ export class NavComponent {
       this.home = test.Language[0].navBar[0].home
       this.menu = test.Language[0].navBar[0].menu
       this.contact = test.Language[0].navBar[0].contact
+      this.language = "Language"
     }else if(language == 'es'){
       this.home = test.Language[1].navBar[0].home
       this.menu = test.Language[1].navBar[0].menu
       this.contact = test.Language[1].navBar[0].contact
+      this.language = "Idioma"
     }
   }
 }
