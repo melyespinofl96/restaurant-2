@@ -35,6 +35,20 @@ export class NavComponent {
       this.menu = this.getTranslatedText('menu');
       this.contact = this.getTranslatedText('contact');
     });
+
+    window.onclick = function(event) {
+      console.log(event.target);
+      if (event.target != document.getElementById("dropbtn") ){
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
   }
 
   mobileMenuToggle(): void {
@@ -42,7 +56,9 @@ export class NavComponent {
   }
 
   toggleLanguageDropdown(): void {
-    this.languageDropdownOpen = !this.languageDropdownOpen;
+    this.languageDropdownOpen = true;
+    var doc = document.getElementById("myDropdown");
+    doc?.classList.toggle("show");
   }
 
   switchLanguage(language: string): void {
@@ -76,5 +92,14 @@ export class NavComponent {
       this.language = "Language"
     else
       this.language = "Idioma"
+  }
+
+  myFunction()
+  {
+    console.log("you clicked me");
+    var doc = document.getElementById("myDropdown");
+    doc?.classList.toggle("show");
+    this.languageDropdownOpen =true;
+    //document.getElementById("myDropDown")?.classList.toggle("show");
   }
 }
