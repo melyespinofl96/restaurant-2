@@ -8,9 +8,9 @@
       <!-- Language Dropdown -->
       <div class="py-4 px-4">
         <a class="hover:text-gray-300 text-lg font-bold" (click)="toggleLanguageDropdown()">{{language}}</a>
-        <ul *ngIf="languageDropdownOpen" class="absolute bg-red-700 mt-2 py-2 w-40 left-36 top-12 rounded-md shadow-lg">
-          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="switchLanguage()">English</a></li>
-          <li><a class="hover:bg-red-500 block px-4 py-2" (click)="switchLanguage()">Español</a></li>
+        <ul *ngIf="languageDropdownOpen" class="absolute bg-red-700 mt-2 py-1 w-40 left-36 top-12 rounded-md shadow-lg">
+          <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage()">English</a></li>
+          <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage()">Español</a></li>
         </ul>
       </div>
     </ul>
