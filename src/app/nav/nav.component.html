@@ -35,6 +35,24 @@
         <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
-
   </div>
+
+  <ul *ngIf="mobileMenu" class="sm:hidden absolute bg-red-700 py-2 w-full right-0 rounded-md shadow-lg text-white" 
+      style="z-index: 1;" id="dropdown-menu" >
+    <li class="text-center">
+      <a class="hover:bg-red-500 block px-4 py-2 "
+        routerLink="/home" routerLinkActive="active"
+        (click)="mobileMenuToggle()">Home</a>
+    </li>
+    <li class="text-center">
+      <a class="hover:bg-red-500 block px-4 py-2"
+        routerLink="/menu" routerLinkActive="active"
+        (click)="mobileMenuToggle()">Menu</a>
+    </li>
+    <li class="text-center">
+      <a class="hover:bg-red-500 block px-4 py-2"
+        routerLink="/contact" routerLinkActive="active"
+        (click)="mobileMenuToggle()">Contact</a>
+    </li>
+  </ul>
 </nav>
