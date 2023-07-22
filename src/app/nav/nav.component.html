@@ -1,20 +1,34 @@
 <nav class="bg-red-700 text-white p-4">
-  
   <div class="container mx-auto flex justify-between items-center relative">
-    <ul class="hidden sm:flex space-x-4 relative">
-      <!-- Logo -->
-      <img class="h-12 w-auto" src="assets/logo.png" alt="Logo">
 
-      <!-- Language Dropdown -->
-      <div class="dropdown">
-        <button id ="dropbtn" class="dropbtn" (click)="toggleLanguageDropdown()" style="cursor:pointer;">{{language}}</button>
-        <ul  id="myDropdown" class="dropdown-content">
-          <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage('en')" style="cursor:pointer;">English</a></li>
-          <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage('es')" style="cursor:pointer;">Español</a></li>
-        </ul>
-      </div>
+    <!-- Language Dropdown -->
+    <div class="dropdown">
+      <button id="dropbtn" class="dropbtn" (click)="toggleLanguageDropdown()" style="cursor:pointer;">{{language}}</button>
+      <ul id="myDropdown" class="dropdown-content">
+        <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage('en')" style="cursor:pointer;">English</a></li>
+        <li><a class="hover:bg-red-500 block px-4 py-1" (click)="switchLanguage('es')" style="cursor:pointer;">Español</a></li>
+      </ul>
+    </div>
+
+    <!-- Logo -->
+    <div class="flex items-center justify-center">
+      <img class="h-12 w-auto" src="assets/logo.png" alt="Logo" style="cursor:pointer;"
+          routerLink="/home" routerLinkActive="active">
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="hidden sm:flex space-x-4 relative" id="nav-links">
+      <li>
+        <a class="hover:text-gray-300 text-lg font-bold" routerLink="/home" routerLinkActive="active">{{home}}</a>
+      </li>
+      <li>
+        <a class="hover:text-gray-300 text-lg font-bold" routerLink="/menu" routerLinkActive="active">{{menu}}</a>
+      </li>
+      <li>
+        <a class="hover:text-gray-300 text-lg font-bold" routerLink="/contact" routerLinkActive="active">{{contact}}</a>
+      </li>
     </ul>
-    
+
     <!-- Mobile Menu Button -->
     <button class="flex items-center justify-center sm:hidden text-2xl font-bold relative" (click)="mobileMenuToggle()">
       <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -22,45 +36,5 @@
       </svg>
     </button>
 
-    <!-- Desktop Navigation Links -->
-    <ul class="hidden sm:flex space-x-4 relative" id="nav-links">
-      <li>
-        <a class="hover:text-gray-300 text-lg font-bold" 
-          routerLink="/home" routerLinkActive="active">{{home}}</a>
-      </li>
-
-      <li>
-        <a class="hover:text-gray-300 text-lg font-bold"
-          routerLink="/menu" routerLinkActive="active">{{menu}}</a>
-      </li>
-
-      <li>
-        <a class="hover:text-gray-300 text-lg font-bold"
-          routerLink="/contact" routerLinkActive="active">{{contact}}</a>
-      </li>
-    </ul>
-
   </div>
 </nav>
-
-<!-- Dropdown Menu -->
-<ul *ngIf="mobileMenu" class="sm:hidden absolute bg-red-700 py-2 w-full right-0 rounded-md shadow-lg text-white" id="dropdown-menu">
-  <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2 "
-      routerLink="/home" routerLinkActive="active"
-      (click)="mobileMenuToggle()">Home</a>
-  </li>
-  <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2"
-      routerLink="/menu" routerLinkActive="active"
-      (click)="mobileMenuToggle()">Menu</a>
-  </li>
-  <li class="text-center">
-    <a class="hover:bg-red-500 block px-4 py-2"
-      routerLink="/contact" routerLinkActive="active"
-      (click)="mobileMenuToggle()">Contact</a>
-  </li>
-</ul>
-
-
-<router-outlet></router-outlet>
