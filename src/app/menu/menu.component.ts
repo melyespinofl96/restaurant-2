@@ -121,10 +121,10 @@ export class MenuComponent{
 
     this.enchiladasName0 = this.getTranslatedText('enchiladasName0');
     this.enchiladasInfo0 = this.getTranslatedText('enchiladasInfo0');
-    this.enchiladasName1 = this.getTranslatedText('enchiladasName0');
-    this.enchiladasInfo1 = this.getTranslatedText('enchiladasInfo0');
-    this.enchiladasName2 = this.getTranslatedText('enchiladasName0');
-    this.enchiladasInfo2 = this.getTranslatedText('enchiladasInfo0');
+    this.enchiladasName1 = this.getTranslatedText('enchiladasName1');
+    this.enchiladasInfo1 = this.getTranslatedText('enchiladasInfo1');
+    this.enchiladasName2 = this.getTranslatedText('enchiladasName2');
+    this.enchiladasInfo2 = this.getTranslatedText('enchiladasInfo2');
 
     this.dessertsName0 = this.getTranslatedText('dessertsName0');
     this.dessertsInfo0 = this.getTranslatedText('dessertsInfo0');
@@ -175,17 +175,17 @@ export class MenuComponent{
 
       this.enchiladasName0 = this.getTranslatedText('enchiladasName0');
       this.enchiladasInfo0 = this.getTranslatedText('enchiladasInfo0');
-      this.enchiladasName1 = this.getTranslatedText('enchiladasName0');
-      this.enchiladasInfo1 = this.getTranslatedText('enchiladasInfo0');
-      this.enchiladasName2 = this.getTranslatedText('enchiladasName0');
-      this.enchiladasInfo2 = this.getTranslatedText('enchiladasInfo0');
+      this.enchiladasName1 = this.getTranslatedText('enchiladasName1');
+      this.enchiladasInfo1 = this.getTranslatedText('enchiladasInfo1');
+      this.enchiladasName2 = this.getTranslatedText('enchiladasName2');
+      this.enchiladasInfo2 = this.getTranslatedText('enchiladasInfo2');
 
       this.dessertsName0 = this.getTranslatedText('dessertsName0');
       this.dessertsInfo0 = this.getTranslatedText('dessertsInfo0');
-      this.dessertsName1 = this.getTranslatedText('dessertsName0');
-      this.dessertsInfo1 = this.getTranslatedText('dessertsInfo0');
-      this.dessertsName2 = this.getTranslatedText('dessertsName0');
-      this.dessertsInfo2 = this.getTranslatedText('dessertsInfo0');
+      this.dessertsName1 = this.getTranslatedText('dessertsName1');
+      this.dessertsInfo1 = this.getTranslatedText('dessertsInfo1');
+      this.dessertsName2 = this.getTranslatedText('dessertsName2');
+      this.dessertsInfo2 = this.getTranslatedText('dessertsInfo2');
 
       this.beveragesName0 = this.getTranslatedText('beveragesName0');
       this.beveragesInfo0 = this.getTranslatedText('beveragesInfo0');

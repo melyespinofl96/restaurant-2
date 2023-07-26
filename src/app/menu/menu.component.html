@@ -65,37 +65,37 @@
             <li [class]="appetizers === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="appetizersToggle()" style="cursor:pointer;">Appetizers</Button>
+                (click)="appetizersToggle()" style="cursor:pointer;">{{categories1}}</Button>
             </li>
 
             <li [class]="soupsAndSalads === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">Soups and Salads</Button>
+                (click)="soupsAndSaladsToggle()" style="cursor:pointer;">{{categories2}}</Button>
             </li>
 
             <li [class]="tacos === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="tacosToggle()" style="cursor:pointer;">Tacos</Button>
+                (click)="tacosToggle()" style="cursor:pointer;">{{categories3}}</Button>
             </li>
 
             <li [class]="enchiladas === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="enchiladasToggle()" style="cursor:pointer;">Enchiladas</Button>
+                (click)="enchiladasToggle()" style="cursor:pointer;">{{categories3}}</Button>
             </li>
 
             <li [class]="desserts === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="dessertsToggle()" style="cursor:pointer;">Desserts</Button>
+                (click)="dessertsToggle()" style="cursor:pointer;">{{categories4}}</Button>
             </li>
 
             <li [class]="beverages === true ? 'bg-red-500 rounded-lg p-1 text-white' : ''">
               <Button class="hover:text-white hover:bg-red-500 hover:rounded-lg hover:p-1 
                             text-2xl font-bold flex-shrink-0"
-                (click)="beveragesToggle()" style="cursor:pointer;">Beverages</Button>
+                (click)="beveragesToggle()" style="cursor:pointer;">{{categories5}}</Button>
             </li>
           </ul>
 
@@ -118,26 +118,26 @@
           <div class="bg-white shadow-lg p-4" (click)="soupsAndSaladsToggle()" style="cursor:pointer;">
             <img src="assets\Food\pozole.jpg" alt="Soups and Salads" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">{{categories1}}</h3>
-            <p class="text-gray-600">Tortilla Soup</p>
-            <p class="text-gray-600">Chicken Mexican Salad</p>
-            <p class="text-gray-600">Pozole</p>
+            <p class="text-gray-600">{{soupsAndSaladsName0}}</p>
+            <p class="text-gray-600">{{soupsAndSaladsName1}}</p>
+            <p class="text-gray-600">{{soupsAndSaladsName2}}</p>
           </div>
 
           <div class="bg-white shadow-lg p-4" (click)="tacosToggle()" style="cursor:pointer;">
             <img src="assets\Food\tacos.jpg" alt="Tacos" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">{{categories2}}</h3>
-            <p class="text-gray-600">Carne Asada Tacos</p>
-            <p class="text-gray-600">Al Pastor Tacos</p>
-            <p class="text-gray-600">Baja Fish Tacos</p>
-            <p class="text-gray-600">Vegetarian Tacos</p>
+            <p class="text-gray-600">{{tacosName0}}</p>
+            <p class="text-gray-600">{{tacosName1}}</p>
+            <p class="text-gray-600">{{tacosName2}}</p>
+            <p class="text-gray-600">{{tacosName3}}</p>
           </div>
 
           <div class="bg-white shadow-lg p-4" (click)="enchiladasToggle()" style="cursor:pointer;">
             <img src="assets\Food\enchiladas.jpg" alt="Enchiladas" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">{{categories3}}</h3>
-            <p class="text-gray-600">Chicken Enchiladas</p>
-            <p class="text-gray-600">Cheese and Spinach Enchiladas</p>
-            <p class="text-gray-600">Enchiladas Suizas</p>
+            <p class="text-gray-600">{{enchiladasName0}}</p>
+            <p class="text-gray-600">{{enchiladasName1}}</p>
+            <p class="text-gray-600">{{enchiladasName2}}</p>
           </div>
 
           <div class="bg-white shadow-lg p-4" (click)="dessertsToggle()" style="cursor:pointer;">
@@ -151,9 +151,9 @@
           <div class="bg-white shadow-lg p-4" (click)="beveragesToggle()" style="cursor:pointer;">
             <img src="assets\Food\margaritas.jpg" alt="Beverages" class="w-full h-auto mb-4">
             <h3 class="text-xl font-bold mb-2">{{categories5}}</h3>
-            <p class="text-gray-600">Margaritas</p>
-            <p class="text-gray-600">Agua Frescas</p>
-            <p class="text-gray-600">Mexican Beer</p>
+            <p class="text-gray-600">{{beveragesName0}}</p>
+            <p class="text-gray-600">{{beveragesName1}}</p>
+            <p class="text-gray-600">{{beveragesName2}}</p>
           </div>
       </div>
       
