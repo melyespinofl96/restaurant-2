@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { AccessibilityStatementComponent } from './accessibility-statement/accessibility-statement.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     HomeComponent,
     FooterComponent,
     ContactComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    AccessibilityStatementComponent
   ],
   imports: [
     BrowserModule,
