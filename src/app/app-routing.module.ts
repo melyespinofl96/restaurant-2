@@ -6,7 +6,6 @@ import { ContactComponent } from './contact/contact.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AccessibilityStatementComponent } from './accessibility-statement/accessibility-statement.component';
 
-
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
